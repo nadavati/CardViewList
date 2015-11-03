@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        card_view:cardElevation="0.01dp"
+        android:layout_marginBottom="0dp">
+        <ImageView
+            android:id="@+id/img_thumbnail"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="50dp"/>
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:background="#5c1b1b1b"
+                android:orientation="horizontal"
+
+                android:layout_height="50dp">
+
+                <ImageView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+
+                    android:src="@drawable/ic_star"
+                    android:layout_marginLeft="13dp"
+                    android:layout_gravity="center"
+                />
+                <ImageView
+                android:id="@+id/rate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_star" />
+                <ImageView
+                    android:id="@+id/rate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_star" />
+
+                <ImageView
+                    android:id="@+id/rate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_star" />
+
+                <ImageView
+                    android:id="@+id/shortList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_shortlist" />
+                <ImageView
+                    android:id="@+id/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_phone" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_nature"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:background="#5c1b1b1b"
+                android:alpha="0.8"
+                android:textColor="#fff"
+                android:textSize="26sp"
+                android:text="Test"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="48dp" />
+
+            <TextView
+                android:id="@+id/tv_des_nature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="15dp"
+                android:alpha="0.8"
+                android:textColor="#ff272727"
+                android:textSize="15dp"
+                android:text="Hello GrabHouse"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <Button
+                android:id="@+id/testMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="15dp"
+                android:alpha="0.8"
+                android:textColor="#ff272727"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:text="Map"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
